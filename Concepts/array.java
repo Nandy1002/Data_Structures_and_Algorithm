@@ -36,6 +36,8 @@ public class array{
 			a[i] = a[i-1]; 
 		}
 		a[index] = element;
+		//bestCase = O(1)
+		//worstCase = O(n)
 	}
 }
 		
