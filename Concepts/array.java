@@ -5,15 +5,37 @@ public class array{
 		
 		int arr[] = new int[10]; // declation of array with reserving 4*10 bytes of space.
 		
+		arr[0] = 1;
 		arr[1] = 23;
 		arr[4] = 12;
 		arr[2] = 8;
 		arr[3] = 90;
 		arr[7] = 33;
-		//traversal 
-		for(int i=0;i<arr.length;i++){
-			System.out.println(arr[i]);
+		arr[6] = 41;
+		arr[5] = 13;
+	
+		//traversal
+		System.out.println("traversing the array");
+		traversel(arr);	
+		
+		//insertion
+		System.out.println("inserting 81 in index 2");
+		insertion(arr, 2, 81);
+		traversel(arr);
+	}
+	// traverse function
+	static void traversel(int a[]){
+		for(int i=0;i<a.length;i++){
+			System.out.println(a[i]);
 		}
+		//bestCase = worstCase = O(n)
+	}
+	// insertion at any index
+	static void insertion(int a[],int index,int element){
+		for(int i = a.length-1; i>index;i--){
+			a[i] = a[i-1]; 
+		}
+		a[index] = element;
 	}
 }
 		
