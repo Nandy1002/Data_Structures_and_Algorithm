@@ -5,6 +5,7 @@ public class array{
 		
 		int arr[] = new int[10]; // declation of array with reserving 4*10 bytes of space.
 		
+		// adding elemnts in the array
 		arr[0] = 1;
 		arr[1] = 23;
 		arr[4] = 12;
