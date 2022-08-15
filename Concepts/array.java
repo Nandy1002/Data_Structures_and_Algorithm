@@ -22,6 +22,11 @@ public class array{
 		System.out.println("inserting 81 in index 2");
 		insertion(arr, 2, 81);
 		traversel(arr);
+
+		//deletion
+		System.out.println("Deleting the element on index 3");
+		deletion(arr, 3);
+		traversel(arr);
 	}
 	// traverse function
 	static void traversel(int a[]){
@@ -38,6 +43,14 @@ public class array{
 		a[index] = element;
 		//bestCase = O(1)
 		//worstCase = O(n)
+	}
+	// deletion function at any index
+	static void deletion(int a[], int index){
+		for(int i=index;i<a.length-1;i++){
+			a[i] = a[i+1];
+		}
+		// bestCase - O(1)
+		// worstCase - O(n)
 	}
 }
 		
