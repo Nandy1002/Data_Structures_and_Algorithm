@@ -30,7 +30,7 @@ public class array{
 		}
 		//bestCase = worstCase = O(n)
 	}
-	// insertion at any index
+	// insertion function at any index
 	static void insertion(int a[],int index,int element){
 		for(int i = a.length-1; i>index;i--){
 			a[i] = a[i-1]; 
