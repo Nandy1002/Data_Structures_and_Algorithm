@@ -26,10 +26,11 @@ public class reverseAnArray {
         }
         System.out.println();
     }
-    // reverse function
+    // reverse function for array
     static int[] reverse(int a[]){
         int temp;
         for(int i=0; i<a.length/2; i++){
+            //swaping starting and ending
             temp = a[i];
             a[i] = a[a.length - i - 1];
             a[a.length - i - 1] = temp;
