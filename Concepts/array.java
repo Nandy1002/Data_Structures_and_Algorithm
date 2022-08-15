@@ -28,6 +28,13 @@ public class array{
 		System.out.println("Deleting the element on index 3");
 		deletion(arr, 3);
 		traversel(arr);
+
+		//Linear Search
+		if(linearSearch(arr, 23)){
+			System.out.println("Element Found");
+		}else{
+			System.out.println("Element not found");
+		}
 	}
 	// traverse function
 	static void traversel(int a[]){
@@ -50,6 +57,17 @@ public class array{
 		for(int i=index;i<a.length-1;i++){
 			a[i] = a[i+1];
 		}
+		// bestCase - O(1)
+		// worstCase - O(n)
+	}
+	// linearSearch function for any element
+	static boolean linearSearch(int a[],int element){
+		for(int i=0;i<a.length;i++){
+			if(a[i] == element){
+				return true;
+			}
+		}
+		return false;
 		// bestCase - O(1)
 		// worstCase - O(n)
 	}
