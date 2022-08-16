@@ -10,6 +10,7 @@ public class maxMinArray {
         }
         sumMaxMin(a);
    } 
+   // min-max function
    static void sumMaxMin(int a[]){
     int max = a[0];
     int min = a[0];
