@@ -1,3 +1,4 @@
+//baka
 class strings {
     public static void main(String[] args) {
         // delcaration of Strings
@@ -46,5 +47,4 @@ class strings {
         //convert stringBuilder to string
         number = Integer.parseInt(sb.toString());
     }
-    
 }
