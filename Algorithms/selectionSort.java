@@ -13,6 +13,7 @@ public class selectionSort {
         for (int e : arr) {
             System.out.print(e + " ");
         }
+        System.out.println();
     }
 
     // Implementing selection sort algorithm 

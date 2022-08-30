@@ -12,6 +12,7 @@ public class bubbleSort {
          for (int e : arr) {
              System.out.print(e + " ");
          }
+         System.out.println();
      }
      // bubble sort algorithm method implementation
      static void bubble_sort(int arr[]){
