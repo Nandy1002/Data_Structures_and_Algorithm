@@ -1,6 +1,10 @@
 /**
  * Dutch National Flag Sort or Sort 012 algorithm
  * this algorithm only apply for the array which has ony 3 elements
+ * 
+ * time complexity - O(n)
+ * space complexity - O(n)
+ * 
  */
 public class DNFsort {
     public static void main(String[] args) {
