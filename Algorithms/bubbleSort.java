@@ -5,8 +5,8 @@
  */
 public class bubbleSort {
     public static void main(String[] args) {
-         // the unsorted array of 0 1 2
-         int arr[] = { 1, 3, 5, 8, 10, 13, 22, 34 };
+         // the random unsorted array of 0 1 2
+         int arr[] = {1, 23, 81, 8, 90, 12, 13, 41, 33, 0};
          bubble_sort(arr);
          // after sort
          for (int e : arr) {

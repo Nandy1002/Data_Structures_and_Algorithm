@@ -39,8 +39,9 @@ public class array{
 	// traverse function
 	static void traversel(int a[]){
 		for(int i=0;i<a.length;i++){
-			System.out.println(a[i]);
+			System.out.print(a[i]+" ");
 		}
+		System.out.println();
 		//bestCase = worstCase = O(n)
 	}
 	// insertion function at any index
