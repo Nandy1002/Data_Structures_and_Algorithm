@@ -1,7 +1,7 @@
 /**
  * Insertion Sort Algorithm
- * Time Complexity - O(n)
- * Space Complexity - O(1)
+ * Time Complexity - O(n^2)
+ * Space Complexity - O(n)
  */
 public class insertionSort {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class insertionSort {
     }
     // implementing insertion sort algo method
     static void insertion_Sort(int a[]){
-       for(int i=0;i<a.length;i++){
+        for(int i=0;i<a.length;i++){
             int current = a[i];
             int j = i - 1;
             while( j>= 0 && current < a[j]){
