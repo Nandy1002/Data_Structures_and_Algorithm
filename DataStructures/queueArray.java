@@ -1,5 +1,7 @@
 /*
  * Circular Queue Data Structure with Array
+ * enqueue time complexity - O(1)
+ * dequeue time complexity - O(1)
  */
 class QueueAR{
     int array[];
