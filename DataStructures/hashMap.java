@@ -5,6 +5,7 @@ import java.util.Map;
  * HashMap is a data structure build upon hashing
  * there is key value pair in each element in hashmap
  */
+
 public class hashMap {
     public static void main(String[] args) {
         //declaration
