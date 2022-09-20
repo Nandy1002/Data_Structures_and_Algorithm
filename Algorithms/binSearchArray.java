@@ -15,7 +15,7 @@ public class binSearchArray {
             if (a[mid] == key) {
                 return mid;
             }
-            if (a[mid] < key) {
+            if (a[mid] < key) { 
                 return binarySearch(a, key, mid + 1, high);
             } else {
                 return binarySearch(a, key, low, mid - 1);
