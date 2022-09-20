@@ -33,15 +33,55 @@ class binaryTree{
         index = - 1;
         root = buildTree(nodes);
     }
-    void traverse(){
-        System.out.println(root.data);
+    void preorderTraverse(Node root){
+        Node current = root;
+        if(current == null){
+            return;
+        }
+        System.out.print(current.data+" ");
+        preorderTraverse(current.left);
+        preorderTraverse(current.right);
+    }
+    void postorderTraverse(Node root){
+        Node current = root;
+        if(current == null){
+            return;
+        }
+        preorderTraverse(current.left);
+        preorderTraverse(current.right);
+        System.out.print(current.data+" ");
+    }
+    void inorderTraverse(Node root){
+        Node current = root;
+        if(current == null){
+            return;
+        }
+        preorderTraverse(current.left);
+        System.out.print(current.data+" ");
+        preorderTraverse(current.right);
     }
 }
 class BinaryTrees {
     public static void main(String[] args) {
         // nodes array for store in binarry tree in preorder 
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+        /* 
+                    1
+                /      \
+               2        3
+              / \        \
+             4  5         6
+                
+        */
         binaryTree tree = new binaryTree(nodes);
-        tree.traverse();
+        System.out.println("Tree in preorder : ");
+        tree.preorderTraverse(tree.root);
+        System.out.println();
+        System.out.println("Tree in postorder : ");
+        tree.postorderTraverse(tree.root);
+        System.out.println();
+        System.out.println("Tree in inorder : ");
+        tree.inorderTraverse(tree.root);
+        System.out.println();
     }
 }
